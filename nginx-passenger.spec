@@ -1,5 +1,5 @@
 %define nginx_name      nginx
-%define nginx_version   1.2.2
+%define nginx_version   1.2.4
 %define nginx_user      nginx
 %define nginx_group     %{nginx_user}
 %define nginx_home      %{_localstatedir}/lib/nginx
@@ -8,11 +8,11 @@
 %define nginx_confdir   %{_sysconfdir}/nginx
 %define nginx_datadir   %{_datadir}/nginx
 %define nginx_webroot   %{nginx_datadir}/html
-%define passenger_version   3.0.13
+%define passenger_version   3.0.17
 
 Name:           nginx-passenger
 Version:        %{nginx_version}+%{passenger_version}
-Release:        2%{?dist}
+Release:        nul%{?dist}
 Summary:        Robust, small and high performance http and reverse proxy server
 Group:          System Environment/Daemons
 
